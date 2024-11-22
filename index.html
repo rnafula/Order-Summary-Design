@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS class </title>
+    <style>
+        /* Universal selector it styles everything hence used for common elements in the page */
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /* Element selector uses elements,  */
+        h1{
+            color:blueviolet;
+        }
+        /* class selector>> for elements with simillsr features give the same class name to style them. Aclass is :definedby a dot.  */
+        .list li{
+            list-style-type: circle;
+        }
+/*         Id selector is used to uniquely style elements. Syntax is denoted by the # symbol.*/ 
+     #main-title{
+     color:blue;}
+/*      descendant selector(space) 
+ .
+        child selector(>) immediate child selector */
+        /* attribute selector styles the attributes value. Used in forms or input type*/
+        input[type="text"]
+        {
+            color:green;
+            margin:20px;
+        }
+/* Pseudoclass selectors used for more complex applications example; 
+:hover :active :nth-child() :nth-last-child() :nth-last-of-type() ::after to use this efficiently
+the element must be styled with another */
+
+a{
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 30px;
+}
+a:hover{
+    background-color:blanchedalmond
+}
+ </style>
+</head>
+<body>
+    <h1 id="main-title">CSS Selectors Demo</h1>
+  <h2>Different Types of Selectors</h2>
+
+  <p>This paragraph is styled using the <strong>element selector</strong>.</p>
+  <p class="highlight">This paragraph has an additional class to highlight its text.</p>
+
+  <div class="content">
+    <p>This paragraph is styled using the descendant selector (inside .content).</p>
+  </div>
+
+  <ul class="list">
+    <li>List item 1 (child selector applies here)</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </form>
+
+  <a href="#">Hover over this link to see the hover effect.</a>
+
+  <p>This paragraph demonstrates the pseudo-element selector by styling the first line only.</p>
+    
+</body>
+</html>

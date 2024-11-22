@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+    <style>
+        *{
+            text-align: center;
+            font-family:Red Hat Display;
+        }
+        .firstdiv{
+            
+            width:60%;
+            margin:auto;
+            background-color:  hsl(225, 100%, 98%);
+            overflow: hidden;
+            border-radius: 12px;
+            
+        }
+        input[ type="button"]{
+            width:40%;
+            margin: auto;
+            background-color:  hsl(245, 75%, 52%);
+            color:hsl(224, 23%, 55%);
+            border: none;
+            
+        }
+        .img{
+            width:100%;
+             height:auto;
+             
+        }
+        body{
+            background-image: url(/pattern-background-desktop.svg);
+            max-width: 1440px;
+        }
+        .div{
+           background-color: hsl(225, 100%, 96%);
+            margin: 10px auto;
+            display: flex;
+            
+            align-items: center;
+            width: 60%;
+            padding: 10px;
+            border-radius: 10px;
+            justify-content: space-between;
+        }
+        /* .content{
+            background-color: white;
+        } */
+        .annual{
+            display: flex;
+            gap: 10px;
+            text-align: center;
+        }
+        p{
+            font-size:16px;
+            line-height: 0.5rem;
+            color:gray;
+            font-weight: 500;
+            
+        }
+        .button{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 60%;
+            margin: 10px auto;
+        }
+        .last{
+          margin-bottom: 20px;
+          border:none;
+          background-color: hsl(225, 100%, 98%);
+          font-weight: 700;
+          color:gray;
+          
+        }
+        .first{
+            background-color: blue;
+            color: white;
+            padding: 2px;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            font-weight:700;
+            color:gray;
+        }
+        h2{
+            
+            font-weight:900;
+        }
+        a{
+            font-weight: 500;
+        }
+       
+        /* .icon{
+            border: 1px solid;
+            width: 40%;
+            border-radius: 100%;
+        } */
+    </style>
+</head>
+<body>
+ <div class="firstdiv">
+    <img src="/Learning CSS Selectors 1/illustration-hero.svg" class="img" alt="Image of a person" >
+    <h2>Order Summary</h2>
+    <p>You can now listen to millions of songs,</p> 
+        <p>audiobooks, and podcasts on and device</p> 
+        <p>anywhere you like!</p>
+
+    
+    <div class="content">
+        
+        <div class="div">
+           
+            <div class="annual">
+                <div class="icon">
+                    <img src="/Learning CSS Selectors 1/icon-music.svg" alt="">
+                </div>
+                <div class="spane">
+                    <span style="font-weight: 700;">Annual Plan</span>
+                    <br>
+                    <span style="color:grey;">$59.99/year</span>
+                </div>
+                
+            </div>
+            <a href="#">change</a>
+       </div>
+
+       <div class="button">
+        <button type="submit" class="first">Proceed to payment</button>
+        <button type="submit" class="last">Cancel order</button>
+    </div>
+    </div>
+
+    
+</div>
+</body>
+</html>

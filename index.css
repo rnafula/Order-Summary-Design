@@ -1,0 +1,14 @@
+/* Css stands for cascanding style sheeet
+Syntax
+selector{}
+
+Protoclols
+specificity>>inline css is more specific than class and id selectoer but id is more specific than class
+Cascading>> means css is executed line by line, the latest line takes precedence.
+Inheritance>> chid tag inherits the parents style
+Importance>> not prefered because it has the highest precedence. used for unique styling.
+
+Linking CSS
+Inline>>in html tags
+external>>a separate file linked to the html doc in the head
+Embeded>> css in the style tag within the head. */
